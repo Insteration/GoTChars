@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game of Thrones Characters-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GoTChars" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Game of Thrones Characters" id="bB6-SB-vgY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1790" y="-535"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Zik-FS-QSO">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="oj3-G9-yIy" customClass="MainViewController" customModule="GoTChars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anW-Jv-eKn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game of Thrones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUp-Y8-jfi">
+                                <rect key="frame" x="40" y="44" width="334" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcU-B2-mon">
+                                <rect key="frame" x="40" y="320" width="334" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="j1s-Tp-PPV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-nJ-hdP">
+                                <rect key="frame" x="40" y="126" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3ah-1Q-89F"/>
+                                    <constraint firstAttribute="width" constant="100" id="saY-32-A5V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back to the Game of Thrones Character List." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUc-Qw-txM">
+                                <rect key="frame" x="148" y="158" width="232" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="qtq-sP-Is7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, user" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evx-21-cEK">
+                                <rect key="frame" x="148" y="126" width="226" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="nkq-Ve-A9D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NUp-Y8-jfi" firstAttribute="top" secondItem="hBc-Iw-gXI" secondAttribute="top" id="10Y-bq-dZP"/>
+                            <constraint firstItem="cZb-nJ-hdP" firstAttribute="leading" secondItem="hBc-Iw-gXI" secondAttribute="leading" constant="40" id="2Wb-aa-4QC"/>
+                            <constraint firstItem="Evx-21-cEK" firstAttribute="leading" secondItem="cZb-nJ-hdP" secondAttribute="trailing" constant="8" id="BWD-GN-dxm"/>
+                            <constraint firstItem="hBc-Iw-gXI" firstAttribute="trailing" secondItem="NUp-Y8-jfi" secondAttribute="trailing" constant="40" id="C0h-Fd-p4g"/>
+                            <constraint firstItem="BUc-Qw-txM" firstAttribute="top" secondItem="Evx-21-cEK" secondAttribute="bottom" constant="8" symbolic="YES" id="PfZ-CX-Ert"/>
+                            <constraint firstItem="Evx-21-cEK" firstAttribute="trailing" secondItem="hcU-B2-mon" secondAttribute="trailing" id="Rg9-w8-8jn"/>
+                            <constraint firstItem="Evx-21-cEK" firstAttribute="leading" secondItem="BUc-Qw-txM" secondAttribute="leading" id="at2-a3-S3D"/>
+                            <constraint firstItem="Evx-21-cEK" firstAttribute="trailing" secondItem="NUp-Y8-jfi" secondAttribute="trailing" id="cJY-EM-ng5"/>
+                            <constraint firstItem="hBc-Iw-gXI" firstAttribute="trailing" secondItem="BUc-Qw-txM" secondAttribute="trailing" constant="34" id="qZF-vX-dDc"/>
+                            <constraint firstItem="cZb-nJ-hdP" firstAttribute="top" secondItem="Evx-21-cEK" secondAttribute="top" id="sBV-jA-IT8"/>
+                            <constraint firstItem="cZb-nJ-hdP" firstAttribute="top" secondItem="NUp-Y8-jfi" secondAttribute="bottom" constant="40" id="tLh-6P-u4Z"/>
+                            <constraint firstItem="cZb-nJ-hdP" firstAttribute="leading" secondItem="hcU-B2-mon" secondAttribute="leading" id="uIi-Hp-AlQ"/>
+                            <constraint firstItem="cZb-nJ-hdP" firstAttribute="bottom" secondItem="BUc-Qw-txM" secondAttribute="bottom" id="wlZ-oC-pTR"/>
+                            <constraint firstItem="hcU-B2-mon" firstAttribute="top" secondItem="cZb-nJ-hdP" secondAttribute="bottom" constant="94" id="wsP-mE-C4i"/>
+                            <constraint firstItem="NUp-Y8-jfi" firstAttribute="leading" secondItem="hBc-Iw-gXI" secondAttribute="leading" constant="40" id="xQI-km-Nc9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hBc-Iw-gXI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gbS-cU-6aw"/>
+                    <connections>
+                        <outlet property="characterListLabel" destination="hcU-B2-mon" id="6xU-S6-fEp"/>
+                        <outlet property="userImage" destination="cZb-nJ-hdP" id="g3o-d4-FJS"/>
+                        <outlet property="userNameLabel" destination="Evx-21-cEK" id="dLo-CD-53q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxm-cx-edt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2504" y="-535"/>
         </scene>
     </scenes>
 </document>
