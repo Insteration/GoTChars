@@ -46,12 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             
             // load image
             let data = try? Data(contentsOf: image)
-            UserModel.info.userImage = UIImage(data: data!)!
-            
-            UserModel.info.status = 1
+            UserModel.info.userImage = UIImage(data: data!) ?? UIImage()
             
             print("full name - \(fullName), image - \(image)")
             
+            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let homeC = storyboard.instantiateViewController(withIdentifier: "ContainterVC") as? ContainerViewController
+            if homeC != nil {
+                homeC!.view.frame = (self.window!.frame)
+                self.window!.addSubview(homeC!.view)
+                self.window!.bringSubviewToFront(homeC!.view)
+            }
         }
     }
     

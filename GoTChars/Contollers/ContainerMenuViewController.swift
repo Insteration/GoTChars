@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class ContainerMenuViewController: UIViewController {
     
@@ -48,6 +49,14 @@ extension ContainerMenuViewController: UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        print(indexPath.row)
+        
+        if indexPath.row == 4 {
+            GIDSignIn.sharedInstance()?.signOut()
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+            self.present(newViewController, animated: true, completion: nil)
+        }
     }
     
 }

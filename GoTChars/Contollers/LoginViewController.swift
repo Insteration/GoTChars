@@ -15,8 +15,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     let myButton: UIButton = {
         let button = UIButton(type: .system)
-        //        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-        //        button.backgroundColor = .green
         button.setTitle("Enter", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -29,11 +27,11 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance()?.uiDelegate = self
         setupSignInButton()
         
-        view.addSubview(myButton)
+//        view.addSubview(myButton)
         
-        myButton.leadingAnchor.constraint(equalTo: signInButton.leadingAnchor).isActive = true
-        myButton.trailingAnchor.constraint(equalTo: signInButton.trailingAnchor).isActive = true
-        myButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 12).isActive = true
+//        myButton.leadingAnchor.constraint(equalTo: signInButton.leadingAnchor).isActive = true
+//        myButton.trailingAnchor.constraint(equalTo: signInButton.trailingAnchor).isActive = true
+//        myButton.topAnchor.constraint(equalTo: signInButton.bottomAnchor, constant: 12).isActive = true
         
     }
     
@@ -43,9 +41,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         view.addSubview(signInButton)
     }
     
-    @objc func signOutButton() {
-        GIDSignIn.sharedInstance()?.signOut()
-    }
     
     @objc func buttonAction(sender: UIButton!) {
         let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "ContainterVC") as! ContainerViewController

@@ -11,7 +11,7 @@ import UIKit
 struct UserModel {
     
     static var info = UserModel()
+    
     var name = ""
     var userImage = UIImage()
-    var status = 0
 }
