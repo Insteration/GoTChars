@@ -9,6 +9,10 @@
 import UIKit
 import GoogleSignIn
 
+protocol MainViewControllerDelegate {
+    func toggleMenu()
+}
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var characterListLabel: UILabel!
@@ -16,6 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var userImage: UIImageView!
     
     private var galleryCollectionView = GalleryCollectionView()
+    var delegate: MainViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,19 +38,11 @@ class MainViewController: UIViewController {
         userNameLabel.text = "Hello, \(UserModel.info.name)"
         userImage.image = UserModel.info.userImage
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(signOutButton))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Exit", style: .done, target: self, action: #selector(exit))
-        navigationItem.title = "Main"
-    }
-    
-    @objc func signOutButton() {
-        dismiss(animated: true, completion: nil)
-        GIDSignIn.sharedInstance()?.signOut()
-    }
-    
-    @objc func exit() {
-        dismiss(animated: true, completion: nil)
-        GIDSignIn.sharedInstance()?.signOut()
+
     }
 
+    @IBAction func menuButton(_ sender: UIButton) {
+        delegate?.toggleMenu()
+    }
+    
 }

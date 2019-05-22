@@ -15,8 +15,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     let myButton: UIButton = {
         let button = UIButton(type: .system)
-//        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-//        button.backgroundColor = .green
+        //        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        //        button.backgroundColor = .green
         button.setTitle("Enter", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -48,11 +48,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        if UserModel.info.status != 0 {
-            let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "MainVC") as! MainViewController
-            let navController = UINavigationController(rootViewController: VC1) // Creating a navigation controller with VC1 at the root of the navigation stack.
-            self.present(navController, animated:true, completion: nil)
-        }
+        let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "ContainterVC") as! ContainerViewController
+        self.present(VC1, animated: true, completion: nil)
     }
 }
 

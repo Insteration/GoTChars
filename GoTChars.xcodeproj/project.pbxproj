@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A09C69E22957EAC004DBD76 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09C69D22957EAC004DBD76 /* ContainerViewController.swift */; };
+		4A09C6A022957EBC004DBD76 /* ContainerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09C69F22957EBC004DBD76 /* ContainerMenuViewController.swift */; };
+		4A09C6A3229584F3004DBD76 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09C6A2229584F3004DBD76 /* MenuTableViewCell.swift */; };
+		4A09C6A722958706004DBD76 /* ContainerMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A09C6A622958706004DBD76 /* ContainerMenuModel.swift */; };
 		4A16C392229535AD00AE155A /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A16C391229535AD00AE155A /* credentials.plist */; };
 		4A16C394229539A000AE155A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C393229539A000AE155A /* MainViewController.swift */; };
 		4A16C39622953E3300AE155A /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39522953E3300AE155A /* GalleryCollectionView.swift */; };
-		4A16C39822953ECA00AE155A /* CharactesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39722953ECA00AE155A /* CharactesModel.swift */; };
+		4A16C39822953ECA00AE155A /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39722953ECA00AE155A /* CharactersModel.swift */; };
 		4A16C39A22953F1F00AE155A /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */; };
 		4A16C39C229550DA00AE155A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39B229550DA00AE155A /* UserModel.swift */; };
 		4AF67F16229532320099606B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF67F15229532320099606B /* AppDelegate.swift */; };
@@ -23,10 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A09C69D22957EAC004DBD76 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		4A09C69F22957EBC004DBD76 /* ContainerMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerMenuViewController.swift; sourceTree = "<group>"; };
+		4A09C6A2229584F3004DBD76 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		4A09C6A622958706004DBD76 /* ContainerMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerMenuModel.swift; sourceTree = "<group>"; };
 		4A16C391229535AD00AE155A /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		4A16C393229539A000AE155A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4A16C39522953E3300AE155A /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
-		4A16C39722953ECA00AE155A /* CharactesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactesModel.swift; sourceTree = "<group>"; };
+		4A16C39722953ECA00AE155A /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A16C39B229550DA00AE155A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4AF67F12229532320099606B /* GoTChars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTChars.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +70,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4A09C6A122957EC1004DBD76 /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				4AF67F17229532320099606B /* LoginViewController.swift */,
+				4A16C393229539A000AE155A /* MainViewController.swift */,
+				4A09C69D22957EAC004DBD76 /* ContainerViewController.swift */,
+				4A09C69F22957EBC004DBD76 /* ContainerMenuViewController.swift */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		4A09C6A4229586C8004DBD76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A16C39722953ECA00AE155A /* CharactersModel.swift */,
+				4A16C39B229550DA00AE155A /* UserModel.swift */,
+				4A09C6A622958706004DBD76 /* ContainerMenuModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A09C6A5229586DE004DBD76 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A16C39522953E3300AE155A /* GalleryCollectionView.swift */,
+				4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */,
+				4A09C6A2229584F3004DBD76 /* MenuTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4AF67F09229532320099606B = {
 			isa = PBXGroup;
 			children = (
@@ -84,18 +123,15 @@
 			isa = PBXGroup;
 			children = (
 				4AF67F15229532320099606B /* AppDelegate.swift */,
-				4AF67F17229532320099606B /* LoginViewController.swift */,
 				4AF67F19229532320099606B /* Main.storyboard */,
 				4AF67F1F229532330099606B /* Assets.xcassets */,
 				4AF67F21229532330099606B /* LaunchScreen.storyboard */,
 				4AF67F24229532330099606B /* Info.plist */,
 				4A16C391229535AD00AE155A /* credentials.plist */,
 				4AF67F1C229532320099606B /* GoTChars.xcdatamodeld */,
-				4A16C393229539A000AE155A /* MainViewController.swift */,
-				4A16C39522953E3300AE155A /* GalleryCollectionView.swift */,
-				4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */,
-				4A16C39722953ECA00AE155A /* CharactesModel.swift */,
-				4A16C39B229550DA00AE155A /* UserModel.swift */,
+				4A09C6A122957EC1004DBD76 /* Contollers */,
+				4A09C6A5229586DE004DBD76 /* Views */,
+				4A09C6A4229586C8004DBD76 /* Models */,
 			);
 			path = GoTChars;
 			sourceTree = "<group>";
@@ -243,14 +279,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A16C39822953ECA00AE155A /* CharactesModel.swift in Sources */,
+				4A09C6A722958706004DBD76 /* ContainerMenuModel.swift in Sources */,
+				4A16C39822953ECA00AE155A /* CharactersModel.swift in Sources */,
+				4A09C6A022957EBC004DBD76 /* ContainerMenuViewController.swift in Sources */,
 				4AF67F18229532320099606B /* LoginViewController.swift in Sources */,
 				4AF67F16229532320099606B /* AppDelegate.swift in Sources */,
 				4AF67F1E229532320099606B /* GoTChars.xcdatamodeld in Sources */,
 				4A16C39C229550DA00AE155A /* UserModel.swift in Sources */,
 				4A16C39622953E3300AE155A /* GalleryCollectionView.swift in Sources */,
 				4A16C39A22953F1F00AE155A /* GalleryCollectionViewCell.swift in Sources */,
+				4A09C69E22957EAC004DBD76 /* ContainerViewController.swift in Sources */,
 				4A16C394229539A000AE155A /* MainViewController.swift in Sources */,
+				4A09C6A3229584F3004DBD76 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
