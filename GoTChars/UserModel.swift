@@ -8,9 +8,10 @@
 
 import UIKit
 
-struct User {
+struct UserModel {
     
-    static var info = User()
+    static var info = UserModel()
     var name = ""
     var userImage = UIImage()
+    var status = 0
 }

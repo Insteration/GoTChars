@@ -28,8 +28,11 @@ struct CharactersModel {
         let eightItem = CharactersModel(mainImage: UIImage(named: "podrick")!, characterName: "Podrick", smallDescription: "Bastard", status: "Alive")
         let ninthItem = CharactersModel(mainImage: UIImage(named: "ramsay")!, characterName: "Ramsay", smallDescription: "Prince", status: "Died")
         let tenthItem = CharactersModel(mainImage: UIImage(named: "melisandre")!, characterName: "Melisandre", smallDescription: "Priestess", status: "Died")
+        let eleventhItem = CharactersModel(mainImage: UIImage(named: "robert")!, characterName: "Robert", smallDescription: "King", status: "Died")
+        let twelthItem = CharactersModel(mainImage: UIImage(named: "drogo")!, characterName: "Drogo", smallDescription: "Khal", status: "Died")
+        let thirteenItem = CharactersModel(mainImage: UIImage(named: "greyworm")!, characterName: "Grey Worm", smallDescription: "Commander", status: "Alive")
         
-        return [firstItem, secondItem, thirdItem, fouthItem, fifthItem, sixthItem, seventhItem, eightItem, ninthItem, tenthItem]
+        return [firstItem, secondItem, thirdItem, fouthItem, fifthItem, sixthItem, seventhItem, eightItem, ninthItem, tenthItem, eleventhItem, twelthItem, thirteenItem]
     }
 }
 

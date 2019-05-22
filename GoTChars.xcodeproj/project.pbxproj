@@ -12,7 +12,7 @@
 		4A16C39622953E3300AE155A /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39522953E3300AE155A /* GalleryCollectionView.swift */; };
 		4A16C39822953ECA00AE155A /* CharactesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39722953ECA00AE155A /* CharactesModel.swift */; };
 		4A16C39A22953F1F00AE155A /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */; };
-		4A16C39C229550DA00AE155A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39B229550DA00AE155A /* User.swift */; };
+		4A16C39C229550DA00AE155A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A16C39B229550DA00AE155A /* UserModel.swift */; };
 		4AF67F16229532320099606B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF67F15229532320099606B /* AppDelegate.swift */; };
 		4AF67F18229532320099606B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF67F17229532320099606B /* LoginViewController.swift */; };
 		4AF67F1B229532320099606B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF67F19229532320099606B /* Main.storyboard */; };
@@ -28,7 +28,7 @@
 		4A16C39522953E3300AE155A /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		4A16C39722953ECA00AE155A /* CharactesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactesModel.swift; sourceTree = "<group>"; };
 		4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
-		4A16C39B229550DA00AE155A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4A16C39B229550DA00AE155A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4AF67F12229532320099606B /* GoTChars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTChars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF67F15229532320099606B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AF67F17229532320099606B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				4A16C39522953E3300AE155A /* GalleryCollectionView.swift */,
 				4A16C39922953F1F00AE155A /* GalleryCollectionViewCell.swift */,
 				4A16C39722953ECA00AE155A /* CharactesModel.swift */,
-				4A16C39B229550DA00AE155A /* User.swift */,
+				4A16C39B229550DA00AE155A /* UserModel.swift */,
 			);
 			path = GoTChars;
 			sourceTree = "<group>";
@@ -247,7 +247,7 @@
 				4AF67F18229532320099606B /* LoginViewController.swift in Sources */,
 				4AF67F16229532320099606B /* AppDelegate.swift in Sources */,
 				4AF67F1E229532320099606B /* GoTChars.xcdatamodeld in Sources */,
-				4A16C39C229550DA00AE155A /* User.swift in Sources */,
+				4A16C39C229550DA00AE155A /* UserModel.swift in Sources */,
 				4A16C39622953E3300AE155A /* GalleryCollectionView.swift in Sources */,
 				4A16C39A22953F1F00AE155A /* GalleryCollectionViewCell.swift in Sources */,
 				4A16C394229539A000AE155A /* MainViewController.swift in Sources */,

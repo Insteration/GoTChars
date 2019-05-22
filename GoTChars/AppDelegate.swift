@@ -41,28 +41,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     // MARK: GIDSignInDelegate
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        
         if let error = error {
             print("\(error.localizedDescription)")
         } else {
             guard let fullName = user.profile.name, let image = user.profile.imageURL(withDimension: 400) else { return }
-            User.info.name = fullName
+            UserModel.info.name = fullName
             
+            // load image
+            let data = try? Data(contentsOf: image)
+            UserModel.info.userImage = UIImage(data: data!)!
             
-            let data = try? Data(contentsOf: image) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-            User.info.userImage = UIImage(data: data!)!
+            UserModel.info.status = 1
             
-        
             print("full name - \(fullName), image - \(image)")
-            
-//            imageView.downloaded(from: "https://cdn.arstechnica.net/wp-content/uploads/2018/06/macOS-Mojave-Dynamic-Wallpaper-transition.jpg")
-            
-            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let homeC = storyboard.instantiateViewController(withIdentifier: "MainVC") as? MainViewController
-            if homeC != nil {
-                homeC!.view.frame = (self.window!.frame)
-                self.window!.addSubview(homeC!.view)
-                self.window!.bringSubviewToFront(homeC!.view)
-            }
             
         }
     }

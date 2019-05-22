@@ -30,15 +30,21 @@ class MainViewController: UIViewController {
         galleryCollectionView.set(cells: CharactersModel.fetchCharacters())
         
         userImage.layer.cornerRadius = 0.5 * userImage.bounds.size.width
-        userNameLabel.text = "Hello, \(User.info.name)"
-        userImage.image = User.info.userImage
+        userNameLabel.text = "Hello, \(UserModel.info.name)"
+        userImage.image = UserModel.info.userImage
 
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(signOutButton))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .done, target: self, action: #selector(signOutButton))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Exit", style: .done, target: self, action: #selector(exit))
+        navigationItem.title = "Main"
     }
     
-    
     @objc func signOutButton() {
+        dismiss(animated: true, completion: nil)
+        GIDSignIn.sharedInstance()?.signOut()
+    }
+    
+    @objc func exit() {
+        dismiss(animated: true, completion: nil)
         GIDSignIn.sharedInstance()?.signOut()
     }
 
